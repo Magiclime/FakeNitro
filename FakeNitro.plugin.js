@@ -1,6 +1,9 @@
 /**
  * @name FakeNitro
+ * @authorLink https://github.com/Magiclime/FakeNitro
  * @website https://github.com/Magiclime
+ * @source https://raw.githubusercontent.com/Magiclime/FakeNitro/main/FakeNitro.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/Magiclime/FakeNitro/main/FakeNitro.plugin.js
  */
 /*@cc_on
 @if (@_jscript)
@@ -34,12 +37,15 @@ module.exports = (() => {
           name: 'sly',
           discord_id: '244173330431737866',
           github_username: 'Magiclime',
+          twitter_username: 'nebacc',
         },
       ],
-      version: '1.0',
+      version: '1.1',
       description:
         "Unlock screensharing qualities, Use cross-server emotes & gif emotes, Everywhere! (Uploading files 100MB+ won't work though.)",
       github: 'https://github.com/Magiclime',
+      github_raw:
+        'https://raw.githubusercontent.com/Magiclime/FakeNitro/main/FakeNitro.plugin.js',
     },
     main: 'FakeNitro.plugin.js',
   };
@@ -107,7 +113,7 @@ module.exports = (() => {
           } = Api;
           return class FakeNitro extends Plugin {
             defaultSettings = {
-              emojiSize: '40',
+              emojiSize: '48',
               screenSharing: false,
               emojiBypass: true,
               clientsidePfp: false,
@@ -148,7 +154,10 @@ module.exports = (() => {
                       64,
                       this.settings.emojiSize,
                       (size) => (this.settings.emojiSize = size),
-                      { markers: [16, 20, 32, 40, 64], stickToMarkers: true }
+                      {
+                        markers: [16, 20, 32, 40, 64],
+                        stickToMarkers: true,
+                      }
                     )
                   ),
                   new Settings.SettingGroup('Profile Picture').append(
