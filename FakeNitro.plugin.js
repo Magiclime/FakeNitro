@@ -2,7 +2,7 @@
  * @name FakeNitro
  * @authorLink https://github.com/Magiclime/FakeNitro
  * @website https://github.com/Magiclime
- * @version 1.1
+ * @version 1.2
  * @source https://raw.githubusercontent.com/Magiclime/FakeNitro/main/FakeNitro.plugin.js
  * @updateUrl https://raw.githubusercontent.com/Magiclime/FakeNitro/main/FakeNitro.plugin.js
  */
@@ -41,7 +41,7 @@ module.exports = (() => {
           twitter_username: 'nebacc',
         },
       ],
-      version: '1.1',
+      version: '1.2',
       description:
         "Unlock screensharing qualities, Use cross-server emotes & gif emotes, Everywhere! (Uploading files 100MB+ won't work though.)",
       github: 'https://github.com/Magiclime',
@@ -114,7 +114,7 @@ module.exports = (() => {
           } = Api;
           return class FakeNitro extends Plugin {
             defaultSettings = {
-              emojiSize: '48',
+              emojiSize: '40',
               screenSharing: false,
               emojiBypass: true,
               clientsidePfp: false,
