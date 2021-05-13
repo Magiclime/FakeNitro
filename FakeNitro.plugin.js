@@ -2,6 +2,7 @@
  * @name FakeNitro
  * @authorLink https://github.com/Magiclime/FakeNitro
  * @website https://github.com/Magiclime
+ * @version 1.1
  * @source https://raw.githubusercontent.com/Magiclime/FakeNitro/main/FakeNitro.plugin.js
  * @updateUrl https://raw.githubusercontent.com/Magiclime/FakeNitro/main/FakeNitro.plugin.js
  */
